@@ -10,6 +10,7 @@ A curated collection of production-grade, highly structured system prompts optim
 - **[`general_chatbot.md`](./general_chatbot.md)**: Master general-purpose AI assistant prompt featuring zero-hallucination policies, context-aware memory, adaptive depth (ELI5 to technical), and safety guardrails.
 
 ### 2. 📧 Sales, Marketing & Copywriting
+- **[`landing_page_copywriter.md`](./landing_page_copywriter.md)**: High-converting SaaS landing page architect covering Hero section, logo cloud, problem agitation, 3-pillar features, pricing table, FAQ accordion, and CRO metrics.
 - **[`cold_email_writer.md`](./cold_email_writer.md)**: Specialized B2B outbound cold email sequence generator pitching AI Chatbot & Automation services. Includes target deliverability metrics (Open/Reply rates), ROI numbers, and an optimization checklist.
 - **[`blog_writer.md`](./blog_writer.md)**: SEO long-form article generator with headline CTR formulas, meta descriptions, readability constraints (Flesch-Kincaid), and CTA structures.
 
