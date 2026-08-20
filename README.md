@@ -1,12 +1,55 @@
 # 🤖 Production AI System Prompts & Model Specifications
 
-A curated collection of production-grade, highly structured system prompts optimized for LLMs (Gemini, ChatGPT, Claude, Grok, etc.) across business use cases, alongside a comprehensive directory of system prompts and tools from leading AI applications (Cursor, Devin, v0, Manus, Perplexity, Windsurf, Replit, and more).
+A curated collection of production-grade, highly structured system prompts organized by domain, alongside a comprehensive directory of system prompts and tools from leading AI applications (Cursor, Devin, v0, Manus, Perplexity, Windsurf, Replit, and more).
 
 ---
 
-## 📁 Repository Overview
+## 📁 Repository Directory Structure
 
-### 1. ⚡ Popular AI Tools & Agent System Prompts (`/ai-tool-system-prompts`)
+```
+.
+├── conversational-ai/        # General Assistant & Conversational Prompts
+├── sales-and-marketing/     # Landing Pages, Cold Email Sequences, SEO Articles
+├── hr-and-recruiting/        # Job Descriptions & Candidate Evaluation Rubrics
+├── customer-support/        # Ticket Classification, Churn Risk, Sentiment, FAQs
+└── ai-tool-system-prompts/  # Prompts from Cursor, Devin, v0, Manus, Perplexity, etc.
+```
+
+---
+
+## 📚 Categorized System Prompts
+
+### 1. 💬 General & Conversational AI (`/conversational-ai`)
+- **[`general_chatbot.md`](./conversational-ai/general_chatbot.md)**: Master general-purpose AI assistant prompt featuring zero-hallucination policies, context-aware memory, adaptive depth (ELI5 to technical), and safety guardrails.
+
+### 2. 📧 Sales, Marketing & Copywriting (`/sales-and-marketing`)
+- **[`landing_page_copywriter.md`](./sales-and-marketing/landing_page_copywriter.md)**: High-converting SaaS landing page architect covering Hero section, logo cloud, problem agitation, 3-pillar features, pricing table, FAQ accordion, and CRO metrics.
+- **[`cold_email_writer.md`](./sales-and-marketing/cold_email_writer.md)**: Specialized B2B outbound cold email sequence generator pitching AI Chatbot & Automation services. Includes target deliverability metrics (Open/Reply rates), ROI numbers, and an optimization checklist.
+- **[`blog_writer.md`](./sales-and-marketing/blog_writer.md)**: SEO long-form article generator with headline CTR formulas, meta descriptions, readability constraints (Flesch-Kincaid), and CTA structures.
+
+### 3. 👥 HR & Talent Acquisition (`/hr-and-recruiting`)
+- **[`job_description_writer.md`](./hr-and-recruiting/job_description_writer.md)**: Inclusive Job Description builder with role summaries, must-have/nice-to-have qualifications, and an objective 4-tier candidate evaluation rubric.
+
+### 4. 🛠️ Customer Support & Support Operations (`/customer-support`)
+- **[`ticket_priority_classifier.md`](./customer-support/ticket_priority_classifier.md)**: Ticket classifier evaluating urgency, sentiment, and issue types into CRITICAL/HIGH/MEDIUM/LOW tiers.
+- **[`response_template_generator.md`](./customer-support/response_template_generator.md)**: Dynamic response template generator with tone variations (Professional vs. Casual) and placeholder schemas.
+- **[`customer_sentiment_analyzer.md`](./customer_support/customer_sentiment_analyzer.md)**: Multi-dimensional sentiment scoring (-1.0 to +1.0), emotional triggers, and pain points extractor.
+- **[`troubleshooting_decision_tree.md`](./customer-support/troubleshooting_decision_tree.md)**: Diagnostic flowchart builder outputting structured, valid JSON decision trees.
+- **[`faq_knowledge_base_builder.md`](./customer-support/faq_knowledge_base_builder.md)**: SEO-optimized FAQ architect with internal linking strategies, anchor targets, and search metadata.
+- **[`customer_churn_risk_identifier.md`](./customer-support/customer_churn_risk_identifier.md)**: Churn risk predictor detecting signal trends, retention probabilities, and targeted intervention plans.
+- **[`support_script_optimizer.md`](./customer-support/support_script_optimizer.md)**: Script analyzer enhancing empathy, objection handling, and generating A/B test variations.
+- **[`complaint_root_cause_analyzer.md`](./customer-support/complaint_root_cause_analyzer.md)**: "5 Whys" root cause analysis framework categorizing systemic issues and severity impact.
+- **[`multilingual_response_translator.md`](./customer-support/multilingual_response_translator.md)**: Technical support translator with glossary mapping, tone calibration, and cultural adaptation.
+- **[`customer_profile_summarizer.md`](./customer-support/customer_profile_summarizer.md)**: Customer persona aggregator synthesizing LTV, purchase patterns, and personalized support needs.
+- **[`support_metric_dashboard_designer.md`](./customer-support/support_metric_dashboard_designer.md)**: Specification builder for real-time support operations analytics dashboards.
+- **[`escalation_workflow_builder.md`](./customer-support/escalation_workflow_builder.md)**: Incident management and escalation matrix designer spanning Level 1 to Executive sign-off.
+- **[`email_template_compliance_checker.md`](./customer-support/email_template_compliance_checker.md)**: Audit prompt evaluating email templates against GDPR/CCPA, brand guidelines, and WCAG accessibility standards.
+- **[`product_issue_documentation_creator.md`](./customer-support/product_issue_documentation_creator.md)**: Technical issue documentation architect crafting problem descriptions, workarounds, and user timelines.
+- **[`support_team_training_curriculum.md`](./customer-support/support_team_training_curriculum.md)**: Onboarding and progressive skill curriculum designer for support representatives.
+
+---
+
+### 5. ⚡ Popular AI Tools & Agent System Prompts (`/ai-tool-system-prompts`)
 A complete reference collection of system prompts, tool schemas, and model configurations from industry-leading AI tools:
 - **Coding Agents**: [`Cursor`](./ai-tool-system-prompts/Cursor%20Prompts), [`Devin AI`](./ai-tool-system-prompts/Devin%20AI), [`Windsurf`](./ai-tool-system-prompts/Windsurf), [`Replit`](./ai-tool-system-prompts/Replit), [`Trae`](./ai-tool-system-prompts/Trae), [`Warp.dev`](./ai-tool-system-prompts/Warp.dev), [`v0`](./ai-tool-system-prompts/v0%20Prompts%20and%20Tools), [`Augment Code`](./ai-tool-system-prompts/Augment%20Code)
 - **AI Frontier Labs**: [`Anthropic`](./ai-tool-system-prompts/Anthropic), [`Google`](./ai-tool-system-prompts/Google), [`Perplexity`](./ai-tool-system-prompts/Perplexity)
@@ -14,39 +57,9 @@ A complete reference collection of system prompts, tool schemas, and model confi
 
 ---
 
-### 2. 💬 General & Conversational AI
-- **[`general_chatbot.md`](./general_chatbot.md)**: Master general-purpose AI assistant prompt featuring zero-hallucination policies, context-aware memory, adaptive depth (ELI5 to technical), and safety guardrails.
-
-### 3. 📧 Sales, Marketing & Copywriting
-- **[`landing_page_copywriter.md`](./landing_page_copywriter.md)**: High-converting SaaS landing page architect covering Hero section, logo cloud, problem agitation, 3-pillar features, pricing table, FAQ accordion, and CRO metrics.
-- **[`cold_email_writer.md`](./cold_email_writer.md)**: Specialized B2B outbound cold email sequence generator pitching AI Chatbot & Automation services. Includes target deliverability metrics (Open/Reply rates), ROI numbers, and an optimization checklist.
-- **[`blog_writer.md`](./blog_writer.md)**: SEO long-form article generator with headline CTR formulas, meta descriptions, readability constraints (Flesch-Kincaid), and CTA structures.
-
-### 4. 👥 HR & Talent Acquisition
-- **[`job_description_writer.md`](./job_description_writer.md)**: Inclusive Job Description builder with role summaries, must-have/nice-to-have qualifications, and an objective 4-tier candidate evaluation rubric.
-
-### 5. 🛠️ Customer Support & Support Operations
-- **[`ticket_priority_classifier.md`](./ticket_priority_classifier.md)**: Ticket classifier evaluating urgency, sentiment, and issue types into CRITICAL/HIGH/MEDIUM/LOW tiers.
-- **[`response_template_generator.md`](./response_template_generator.md)**: Dynamic response template generator with tone variations (Professional vs. Casual) and placeholder schemas.
-- **[`customer_sentiment_analyzer.md`](./customer_sentiment_analyzer.md)**: Multi-dimensional sentiment scoring (-1.0 to +1.0), emotional triggers, and pain points extractor.
-- **[`troubleshooting_decision_tree.md`](./troubleshooting_decision_tree.md)**: Diagnostic flowchart builder outputting structured, valid JSON decision trees.
-- **[`faq_knowledge_base_builder.md`](./faq_knowledge_base_builder.md)**: SEO-optimized FAQ architect with internal linking strategies, anchor targets, and search metadata.
-- **[`customer_churn_risk_identifier.md`](./customer_churn_risk_identifier.md)**: Churn risk predictor detecting signal trends, retention probabilities, and targeted intervention plans.
-- **[`support_script_optimizer.md`](./support_script_optimizer.md)**: Script analyzer enhancing empathy, objection handling, and generating A/B test variations.
-- **[`complaint_root_cause_analyzer.md`](./complaint_root_cause_analyzer.md)**: "5 Whys" root cause analysis framework categorizing systemic issues and severity impact.
-- **[`multilingual_response_translator.md`](./multilingual_response_translator.md)**: Technical support translator with glossary mapping, tone calibration, and cultural adaptation.
-- **[`customer_profile_summarizer.md`](./customer_profile_summarizer.md)**: Customer persona aggregator synthesizing LTV, purchase patterns, and personalized support needs.
-- **[`support_metric_dashboard_designer.md`](./support_metric_dashboard_designer.md)**: Specification builder for real-time support operations analytics dashboards.
-- **[`escalation_workflow_builder.md`](./escalation_workflow_builder.md)**: Incident management and escalation matrix designer spanning Level 1 to Executive sign-off.
-- **[`email_template_compliance_checker.md`](./email_template_compliance_checker.md)**: Audit prompt evaluating email templates against GDPR/CCPA, brand guidelines, and WCAG accessibility standards.
-- **[`product_issue_documentation_creator.md`](./product_issue_documentation_creator.md)**: Technical issue documentation architect crafting problem descriptions, workarounds, and user timelines.
-- **[`support_team_training_curriculum.md`](./support_team_training_curriculum.md)**: Onboarding and progressive skill curriculum designer for support representatives.
-
----
-
 ## 🛠️ Prompt Architecture Standard
 
-All custom system prompts in this repository follow a standardized XML-tagged modular structure:
+All system prompts in this repository follow a standardized XML-tagged modular structure:
 - `<system_context>` / `<system_identity>`: Defines role, objective, and persona boundaries.
 - `<copywriting_rules>` / `<directives>`: Guardrails, tone standards, and behavioral constraints.
 - `<input_placeholders>`: Standardized `{VARIABLE}` syntax for dynamic population.
