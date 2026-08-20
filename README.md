@@ -1,23 +1,31 @@
-# 🤖 Production-Ready AI System Prompts Repository
+# 🤖 Production AI System Prompts & Model Specifications
 
-A curated collection of production-grade, highly structured system prompts optimized for LLMs (Gemini, ChatGPT, Claude, Grok, etc.) across diverse business and operational use cases.
+A curated collection of production-grade, highly structured system prompts optimized for LLMs (Gemini, ChatGPT, Claude, Grok, etc.) across business use cases, alongside a comprehensive directory of system prompts and tools from leading AI applications (Cursor, Devin, v0, Manus, Perplexity, Windsurf, Replit, and more).
 
 ---
 
 ## 📁 Repository Overview
 
-### 1. 💬 General & Conversational AI
+### 1. ⚡ Popular AI Tools & Agent System Prompts (`/ai-tool-system-prompts`)
+A complete reference collection of system prompts, tool schemas, and model configurations from industry-leading AI tools:
+- **Coding Agents**: [`Cursor`](./ai-tool-system-prompts/Cursor%20Prompts), [`Devin AI`](./ai-tool-system-prompts/Devin%20AI), [`Windsurf`](./ai-tool-system-prompts/Windsurf), [`Replit`](./ai-tool-system-prompts/Replit), [`Trae`](./ai-tool-system-prompts/Trae), [`Warp.dev`](./ai-tool-system-prompts/Warp.dev), [`v0`](./ai-tool-system-prompts/v0%20Prompts%20and%20Tools), [`Augment Code`](./ai-tool-system-prompts/Augment%20Code)
+- **AI Frontier Labs**: [`Anthropic`](./ai-tool-system-prompts/Anthropic), [`Google`](./ai-tool-system-prompts/Google), [`Perplexity`](./ai-tool-system-prompts/Perplexity)
+- **Agent Frameworks**: [`Manus Agent Tools & Prompts`](./ai-tool-system-prompts/Manus%20Agent%20Tools%20%26%20Prompt), [`Lovable`](./ai-tool-system-prompts/Lovable), [`Emergent`](./ai-tool-system-prompts/Emergent)
+
+---
+
+### 2. 💬 General & Conversational AI
 - **[`general_chatbot.md`](./general_chatbot.md)**: Master general-purpose AI assistant prompt featuring zero-hallucination policies, context-aware memory, adaptive depth (ELI5 to technical), and safety guardrails.
 
-### 2. 📧 Sales, Marketing & Copywriting
+### 3. 📧 Sales, Marketing & Copywriting
 - **[`landing_page_copywriter.md`](./landing_page_copywriter.md)**: High-converting SaaS landing page architect covering Hero section, logo cloud, problem agitation, 3-pillar features, pricing table, FAQ accordion, and CRO metrics.
 - **[`cold_email_writer.md`](./cold_email_writer.md)**: Specialized B2B outbound cold email sequence generator pitching AI Chatbot & Automation services. Includes target deliverability metrics (Open/Reply rates), ROI numbers, and an optimization checklist.
 - **[`blog_writer.md`](./blog_writer.md)**: SEO long-form article generator with headline CTR formulas, meta descriptions, readability constraints (Flesch-Kincaid), and CTA structures.
 
-### 3. 👥 HR & Talent Acquisition
+### 4. 👥 HR & Talent Acquisition
 - **[`job_description_writer.md`](./job_description_writer.md)**: Inclusive Job Description builder with role summaries, must-have/nice-to-have qualifications, and an objective 4-tier candidate evaluation rubric.
 
-### 4. 🛠️ Customer Support & Support Operations
+### 5. 🛠️ Customer Support & Support Operations
 - **[`ticket_priority_classifier.md`](./ticket_priority_classifier.md)**: Ticket classifier evaluating urgency, sentiment, and issue types into CRITICAL/HIGH/MEDIUM/LOW tiers.
 - **[`response_template_generator.md`](./response_template_generator.md)**: Dynamic response template generator with tone variations (Professional vs. Casual) and placeholder schemas.
 - **[`customer_sentiment_analyzer.md`](./customer_sentiment_analyzer.md)**: Multi-dimensional sentiment scoring (-1.0 to +1.0), emotional triggers, and pain points extractor.
@@ -38,7 +46,7 @@ A curated collection of production-grade, highly structured system prompts optim
 
 ## 🛠️ Prompt Architecture Standard
 
-All system prompts in this repository follow a standardized XML-tagged modular structure:
+All custom system prompts in this repository follow a standardized XML-tagged modular structure:
 - `<system_context>` / `<system_identity>`: Defines role, objective, and persona boundaries.
 - `<copywriting_rules>` / `<directives>`: Guardrails, tone standards, and behavioral constraints.
 - `<input_placeholders>`: Standardized `{VARIABLE}` syntax for dynamic population.
