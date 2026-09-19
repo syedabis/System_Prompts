@@ -36,6 +36,9 @@ A curated collection of production-grade, highly structured system prompts organ
 - **[`n8n_real_estate_chatbot.md`](./n8n-prompts/n8n_real_estate_chatbot.md)**: Specialized n8n workflow chatbot prompt for real estate agencies (Property listings, tour scheduling, mortgage estimates, rental terms).
 - **[`n8n_healthcare_chatbot.md`](./n8n-prompts/n8n_healthcare_chatbot.md)**: Specialized n8n workflow chatbot prompt for clinics & healthcare providers (Appointment scheduling, medical disclaimers, doctor profiles, insurance coverage).
 - **[`n8n_restaurant_chatbot.md`](./n8n-prompts/n8n_restaurant_chatbot.md)**: Specialized n8n workflow chatbot prompt for restaurants & dining (Table reservations, menu prices, dietary filters, private event hosting).
+- **[`n8n_cold_email_chatbot_sales.md`](./n8n-prompts/n8n_cold_email_chatbot_sales.md)**: Specialized n8n workflow prompt to generate outbound B2B cold emails selling AI Chatbot solutions (Outputs JSON with `subject` and `body`, uses `{client_email}` and `{business_category}` placeholders, 200-word constraint, metrics, sent by John Wich from datacrumbs).
+
+
 
 ### 3. 🎙️ Voice Agents & Telephony AI (`/voice-agents`)
 - **[`hr_voice_assessment_agent.md`](./voice-agents/hr_voice_assessment_agent.md)**: Outbound HR voice assessment agent prompt for telephony platforms (Vapi, Bland AI, Retell AI) to conduct candidate initial screening, parse job requirements dynamically, and verify employment status.
